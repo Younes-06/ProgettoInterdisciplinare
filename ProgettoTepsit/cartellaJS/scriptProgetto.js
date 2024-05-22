@@ -3,6 +3,7 @@ $(document).ready(function () {
         $(".ack" + i).hide();
     }
     $("#start").click(function () {
+        alert("ciao");
         muovi1(function () {muovi2(muovi3)});
     });
     $(".frame3 button").click(function () { interrompiTrasferimento(0, 5, $(this).attr("id").replace("bottone", ""), function(){muovi2(muovi3)});});
