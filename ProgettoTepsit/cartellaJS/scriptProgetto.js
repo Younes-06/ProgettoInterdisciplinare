@@ -38,7 +38,7 @@ function animatePacchetto(i, x, callback) {
             bool[i] = false;
             if (i == x - 1) callback();
         });
-        $("#busta" + i).attr("src", "../Immagini/ack.png");
+        $("#busta" + i).attr("src", "../immagini/ack.png");
         animatePacchetto(i + 1, x, callback);
     }
 }
@@ -52,7 +52,7 @@ function animatePacchetto2(i, x, callback) {
             $(".ack" + i).show();
             if (i == x - 1) callback();
         });
-        $("#busta" + i).attr("src", "../Immagini/ack.png");
+        $("#busta" + i).attr("src", "../immagini/ack.png");
         animatePacchetto2(i + 1, x, callback);
     }
 }
