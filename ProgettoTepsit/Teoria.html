@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="cartellaCSS/cssProgetto.css">
+    <link rel="stylesheet" href="cartellaCSS/cssTeoria.css">
+    <title>Sliding Windows</title>
+</head>
+<body>
+    
+    <h1>
+        <a class="menu__link" href="../Home.html" data-hover="HOME">BACK</a>
+        <span>COME FUNZIONA LO SLIDING WINDOW</span>
+		
+    </h1>
+	<br>
+	<h2>
+		<span class="1">S</span>piegazione <span class="1">S</span>liding <span class="1">W</span>indow con <span class="1">Go Back N</span> 
+	</h2>
+    
+    <div class="container contenitore" id="contenitore">
+        <div class="row">
+            
+			<p>La tecnica della Sliding Window è un approccio fondamentale nel controllo del flusso durante la trasmissione di pacchetti nelle reti di computer e nelle telecomunicazioni. 
+			Consiste nell'usare una finestra virtuale che scorre lungo la sequenza di pacchetti, consentendo al mittente di adattare dinamicamente la velocità di trasmissione in base alla risposta del destinatario.</p>
+			<br>
+			<p>Durante la trasmissione, il mittente mantiene una finestra di invio che rappresenta il numero massimo di pacchetti che possono essere inviati senza ricevere feedback dal destinatario.
+			Il destinatario invia conferme al mittente per confermare la ricezione dei pacchetti, e la dimensione della finestra di invio può variare dinamicamente in base alle condizioni di rete, aumentando o diminuendo a seconda della capacità del canale e delle prestazioni di ricezione del destinatario.</p>
+			<br>
+			<ol>
+				<li><b>Finestra di invio:</b>Il mittente mantiene una finestra di invio che rappresenta il numero massimo di pacchetti che possono essere inviati senza ricevere feedback dal destinatario. Questa finestra si "scorre" man mano che il mittente invia pacchetti e riceve conferme dal destinatario.</li>
+				<li><b>Conferme di ricezione:</b>Il destinatario invia conferme al mittente per confermare la ricezione dei pacchetti. Queste conferme possono essere sotto forma di ACK (Acknowledgment) nei protocolli TCP/IP, ad esempio.</li>
+				<li><b>Sliding Window:</b>La dimensione della finestra di invio può variare dinamicamente in base alla velocità di ricezione dei pacchetti da parte del destinatario e alla capacità del canale di comunicazione. Il mittente può regolare la dimensione della finestra in base alla risposta del destinatario, aumentandola se il flusso di pacchetti viene ricevuto senza problemi o riducendola se si verificano perdite o congestioni.</li>
+			</ol>
+
+            <div class="legenda">
+                <div>
+                     <img src="Immagini/pacchettoRicevuto.png" alt=""> :Pacchetto ricevuto
+                </div>
+                <div>
+                   <img src="Immagini/busta.png" alt=""> :Pacchetto pronto all'invio 
+                </div>
+                <div>
+                    <img src="Immagini/ack.png" alt=""> :Risposta positiva
+                </div>
+                <div>
+                    <img src="Immagini/nack.png" alt=""> :Pacchetto già ricevuto
+                </div>
+            </div>
+
+			
+        </div>
+    </div>
+    <a  href = "Simulatore.html"><button id="start">Vai al Simulatore</button></a>
+</body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
+		integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet" />
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+	<title>Sliding Windows</title>
+</head>
+
+<body>
+	<h1>
+		<a class="menu__link" href="../Home.html" data-hover="HOME">BACK</a>
+		<span>SIMULATORE</span>
+	</h1>
+	<div class="container contenitore" id="contenitore">
+		<div class="row">
+			<div class="col-md-1 frame">
+				<p>SENDER:</p>
+			</div>
+			<div class="col-md-1 frame"> <img id="busta2" src="Immagini/busta.png" alt="packets" height="50"
+					width="100"></div>
+			<div class="col-md-1 frame"> <img id="busta3" src="Immagini/busta.png" alt="packets" height="50"
+					width="100"></div>
+			<div class="col-md-1 frame"> <img id="busta4" src="Immagini/busta.png" alt="packets" height="50"
+					width="100"></div>
+			<div class="col-md-1 frame"> <img id="busta5" src="Immagini/busta.png" alt="packets" height="50"
+					width="100"></div>
+			<div class="col-md-1 frame"> <img id="busta6" src="Immagini/busta.png" alt="packets" height="50"
+					width="100"></div>
+			<div class="col-md-1 frame"> <img id="busta7" src="Immagini/busta.png" alt="packets" height="50"
+					width="100"></div>
+			<div class="col-md-1 frame"> <img id="busta8" src="Immagini/busta.png" alt="packets" height="50"
+					width="100"></div>
+			<div class="col-md-1 frame"> <img id="busta9" src="Immagini/busta.png" alt="packets" height="50"
+					width="100"></div>
+		</div>
+
+		<div class="row">
+			<div class="col-md-1 frame2">
+				<p>RECEIVER:</p>
+			</div>
+			<div class="col-md-1 frame2"><img class="ack2" src="Immagini/pacchettoRicevuto.png" alt="packets"
+					height="50" width="100"></div>
+			<div class="col-md-1 frame2"> <img class="ack3" src="Immagini/pacchettoRicevuto.png" alt="packets"
+					height="50" width="100"></div>
+			<div class="col-md-1 frame2"> <img class="ack4" src="Immagini/pacchettoRicevuto.png" alt="packets"
+					height="50" width="100"></div>
+			<div class="col-md-1 frame2"> <img class="ack5" src="Immagini/pacchettoRicevuto.png" alt="packets"
+					height="50" width="100"></div>
+			<div class="col-md-1 frame2"> <img class="ack6" src="Immagini/pacchettoRicevuto.png" alt="packets"
+					height="50" width="100"></div>
+			<div class="col-md-1 frame2"> <img class="ack7" src="Immagini/pacchettoRicevuto.png" alt="packets"
+					height="50" width="100"></div>
+			<div class="col-md-1 frame2"> <img class="ack8" src="Immagini/pacchettoRicevuto.png" alt="packets"
+					height="50" width="100"></div>
+			<div class="col-md-1 frame2"> <img class="ack9" src="Immagini/pacchettoRicevuto.png" alt="packets"
+					height="50" width="100"></div>
+		</div>
+		<div class="row">
+			<div class="col-md-1 frame3"> </div>
+			<div class="col-md-1 frame3"> <button id="bottone2"> ELIMINA 1° PACCHETTO </button></div>
+			<div class="col-md-1 frame3"> <button id="bottone3"> ELIMINA 2° PACCHETTO </button></div>
+			<div class="col-md-1 frame3"> <button id="bottone4"> ELIMINA 3° PACCHETTO </button></div>
+			<div class="col-md-1 frame4"> <button id="bottone5"> ELIMINA 4° PACCHETTO </button></div>
+			<div class="col-md-1 frame4"> <button id="bottone6"> ELIMINA 5° PACCHETTO </button></div>
+			<div class="col-md-1 frame4"> <button id="bottone7"> ELIMINA 6° PACCHETTO </button></div>
+			<div class="col-md-1 frame5"> <button id="bottone8"> ELIMINA 7° PACCHETTO </button></div>
+			<div class="col-md-1 frame5"> <button id="bottone9"> ELIMINA 8° PACCHETTO </button></div>
+		</div>
+
+
+	</div> <button id="start">INIZIO</button>
+	<p id="countdown"></p>
+	<p id="messaggio">ACK non ricevuto, invio di nuovo</p>
+</body>
+<script type="text/javascript" src="cartellaJS/scriptProgetto.js"></script>
+<link rel="stylesheet" href="cartellaCSS/cssProgetto.css">
+
+</html>
