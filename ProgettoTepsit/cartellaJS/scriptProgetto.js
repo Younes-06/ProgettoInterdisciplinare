@@ -38,7 +38,7 @@ function animatePacchetto(i, x, callback) {
             bool[i] = false;
             if (i == x - 1) callback();
         });
-        $("#busta" + i).attr("src", "Immagini/ack.png");
+        $("#busta" + i).attr("src", "../Immagini/ack.png");
         animatePacchetto(i + 1, x, callback);
     }
 }
@@ -52,7 +52,7 @@ function animatePacchetto2(i, x, callback) {
             $(".ack" + i).show();
             if (i == x - 1) callback();
         });
-        $("#busta" + i).attr("src", "Immagini/ack.png");
+        $("#busta" + i).attr("src", "../Immagini/ack.png");
         animatePacchetto2(i + 1, x, callback);
     }
 }
@@ -78,7 +78,7 @@ function animateBusta2(i, x, callback) {
     if (i < x) {
         if (bool[i] == false) {
             console.log(bool);
-            $("#busta" + i).attr("src", "Immagini/nack.png");
+            $("#busta" + i).attr("src", "../Immagini/nack.png");
             $("#busta" + i).show();
             setTimeout(function () {
                 $("#busta" + i).hide();
